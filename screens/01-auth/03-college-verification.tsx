@@ -10,16 +10,14 @@ import {
     TouchableOpacity,
     View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 type VerificationStep = "college" | "username" | "success";
 
 const colleges = [
   "LNCT Group of Colleges, Bhopal",
-  "IIT Bombay",
-  "IIT Delhi",
-  "IIIT Hyderabad",
-  "NIT Trichy",
-  "VIT Vellore",
+  "LNCT University, Bhopal",
+  "LNCT Science Bhopal",
   "BITS Pilani",
   "Other",
 ];
@@ -320,7 +318,7 @@ export default function CollegeVerification({
   );
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top"]}>
       <LinearGradient
         colors={[
           theme.colors.background.primary,
@@ -381,7 +379,7 @@ export default function CollegeVerification({
           </View>
         </TouchableOpacity>
       </Modal>
-    </View>
+    </SafeAreaView>
   );
 }
 

@@ -42,7 +42,7 @@ class AdManager {
 
       // Set content rating for college audience (17+)
       await mobileAds().setRequestConfiguration({
-        maxAdContentRating: MaxAdContentRating.MATURE_AUDIENCE,
+        maxAdContentRating: MaxAdContentRating.MA,
         tagForChildDirectedTreatment: false,
         tagForUnderAgeOfConsent: false,
       });

@@ -8,6 +8,7 @@ import {
     TouchableOpacity,
     View,
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 type VibeOption = {
   id: string;
@@ -72,7 +73,7 @@ export default function OnboardingVibeCheck({
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top"]}>
       {/* Background gradient */}
       <LinearGradient
         colors={[
@@ -203,7 +204,7 @@ export default function OnboardingVibeCheck({
           </LinearGradient>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 

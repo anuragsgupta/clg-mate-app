@@ -8,6 +8,9 @@ import {
     TouchableOpacity,
     View,
 } from "react-native";
+import {
+    SafeAreaView
+} from "react-native-safe-area-context";
 
 type MatchProfile = {
   id: string;
@@ -104,7 +107,7 @@ export default function HomeFeed() {
 
   if (!currentProfile) {
     return (
-      <View style={styles.container}>
+      <SafeAreaView style={styles.container} edges={["top", "bottom"]}>
         <LinearGradient
           colors={[
             theme.colors.background.primary,
@@ -119,12 +122,12 @@ export default function HomeFeed() {
             Check back later for new vibes
           </Text>
         </View>
-      </View>
+      </SafeAreaView>
     );
   }
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top"]}>
       <LinearGradient
         colors={[
           theme.colors.background.primary,
@@ -313,7 +316,7 @@ export default function HomeFeed() {
           <Text style={styles.navLabel}>Profile</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </SafeAreaView>
   );
 }
 
