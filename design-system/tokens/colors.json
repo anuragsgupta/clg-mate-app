@@ -1,0 +1,25 @@
+{
+  "midnight-garden": {
+    "background": {
+      "primary": "#0f0f1a",
+      "secondary": "#1a1b2f",
+      "tertiary": "#252740"
+    },
+    "accent": {
+      "primary": "#00d4aa",
+      "secondary": "#7c3aed",
+      "warning": "#f59e0b"
+    },
+    "text": {
+      "primary": "#ffffff",
+      "secondary": "#a0a3bd",
+      "muted": "#6b6f8a"
+    },
+    "border": {
+      "subtle": "#2a2d45"
+    },
+    "overlay": {
+      "glass": "rgba(255, 255, 255, 0.05)"
+    }
+  }
+}
