@@ -2,6 +2,7 @@ import { createTextStyle, theme } from "@/design-system/theme";
 import { LinearGradient } from "expo-linear-gradient";
 import React, { useEffect } from "react";
 import { Animated, StyleSheet, Text, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function SplashScreen({
   onComplete,
@@ -36,7 +37,7 @@ export default function SplashScreen({
   }, []);
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container} edges={["top", "bottom"]}>
       {/* Background with subtle gradient */}
       <LinearGradient
         colors={[
@@ -72,7 +73,7 @@ export default function SplashScreen({
         </View>
 
         {/* Brand name */}
-        <Text style={styles.brandName}>Vibe</Text>
+        <Text style={styles.brandName}>Welcome To College Mate</Text>
 
         {/* Tagline */}
         <Text style={styles.tagline}>
@@ -85,7 +86,7 @@ export default function SplashScreen({
         <Text style={styles.hint}>Swipe up to start</Text>
         <View style={styles.swipeIndicator} />
       </Animated.View>
-    </View>
+    </SafeAreaView>
   );
 }
 
