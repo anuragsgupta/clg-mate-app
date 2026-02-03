@@ -1,0 +1,38 @@
+{
+  "fontFamily": {
+    "primary": "Plus Jakarta Sans",
+    "fallback": "System"
+  },
+  "scale": {
+    "display": {
+      "fontSize": 32,
+      "lineHeight": 40,
+      "fontWeight": "700",
+      "usage": "Hero text"
+    },
+    "heading": {
+      "fontSize": 24,
+      "lineHeight": 32,
+      "fontWeight": "600",
+      "usage": "Screen titles"
+    },
+    "body": {
+      "fontSize": 16,
+      "lineHeight": 24,
+      "fontWeight": "400",
+      "usage": "Chat, descriptions"
+    },
+    "caption": {
+      "fontSize": 12,
+      "lineHeight": 16,
+      "fontWeight": "400",
+      "usage": "Metadata, timestamps"
+    },
+    "tiny": {
+      "fontSize": 10,
+      "lineHeight": 12,
+      "fontWeight": "500",
+      "usage": "Badges, labels"
+    }
+  }
+}
